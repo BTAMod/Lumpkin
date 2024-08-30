@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "lumpkin",
+  "version": "${version}",
+
+  "name": "Lumpkin",
+  "description": "Slice 'em up!",
+  "authors": [
+    "The man",
+    "The myth",
+    "The legend",
+    "BIGJANGO!!!",
+    "*everyone cheers wildly*"
+  ],
+
+  "icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "bigjango.lumpkin.Lumpkin"
+    ],
+    "beforeGameStart": [
+      "bigjango.lumpkin.Lumpkin"
+    ],
+    "afterGameStart": [
+      "bigjango.lumpkin.Lumpkin"
+    ],
+    "recipesReady": [
+      "bigjango.lumpkin.Lumpkin"
+    ]
+  },
+  "mixins": [
+      "lumpkin.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.15.5"
+  }
+}
